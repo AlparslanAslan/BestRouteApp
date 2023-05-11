@@ -14,7 +14,7 @@ namespace BestWayWebApp.Queries
         public DataTable sel_sensor()
         {
             DataTable dt = new DataTable();
-            string connString = @"server=LAPTOP-0I74MJKS;database= database_test;Trusted_Connection=true;";
+            string connString = @"";
             string query = "select MaximumSpeed,MinimumSpeed,Geohash from SensorRecords";
 
             SqlConnection conn = new SqlConnection(connString);
